@@ -53,7 +53,7 @@
 
 /* iPad */
 
-@media only screen and (min-device-width : 641px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width : 641px) and (max-device-width : 1023px) and (-webkit-min-device-pixel-ratio: 1) {
 	
 	body {
 		margin:0;
@@ -109,7 +109,7 @@
 
 
 /*Desktop*/
-@media only screen and (min-device-width: 1025px) {
+@media only screen and (min-device-width: 1024px) {
 		
 	body {
 		margin:0;
