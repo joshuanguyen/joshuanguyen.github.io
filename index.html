@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>pop.</title>
+		<meta name="description" content="A new tool for the visual age. Coming soon."/>
+		<meta name="viewport" content="user-scalable=0, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.png">
+		<link rel='stylesheet' href="hp.css" type="text/css" rel="stylesheet" />
+
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/app.js" type="text/javascript"></script>
+	
+	<script>
+	
+	jQuery(document).ready(function() {
+		
+		$('video#bgvideo').on("loadedmetadata", scaleVideo);
+		$(window).on("resize", scaleVideo);
+		
+		function scaleVideo() {
+	
+			// Get the window height and width and saved them as variables
+			
+			var windowHeight = $(window).height();
+			var windowWidth = $(window).width();
+	
+			// Get video width and height
+			
+			var videoNativeWidth = $('video#bgvideo')[0].videoWidth;
+			var videoNativeHeight = $('video#bgvideo')[0].videoHeight;
+			
+			// Get the scale factor
+			
+			var heightScaleFactor = windowHeight / videoNativeHeight;
+			var widthScaleFactor = windowWidth / videoNativeWidth;
+
+			// Get the highest scale factor
+			
+			if (widthScaleFactor > heightScaleFactor) {
+				var scale = widthScaleFactor;
+			}
+			
+			else {
+				var scale = heightScaleFactor;
+			}
+
+			var scaledVideoHeight = videoNativeHeight * scale;
+			var scaledVideoWidth = videoNativeWidth * scale;
+
+			$('video#bgvideo').height(scaledVideoHeight);
+			$('video#bgvideo').width(scaledVideoWidth); 
+
+		}
+		
+	}) 
+	
+	</script>	
+	
+		
+	</head>
+	<body>
+		<div class="overlay">
+			<img src="images/popappicon.png"></a>	
+			<p>Now available in<br><i>selected countries</i>.</p>	
+		</div>
+	
+		
+		<video id="bgvideo" muted autoplay="true" loop="true">
+			<source src="HelloPop1.mp4" type="video/mp4"></source>
+			<source src="HelloPop1.webm" type="video/webm"></source>
+			<source src="HelloPop1.ogv" type="video/webm"></source>	
+			
+		</video>
+	
+	
+	<div id="footer">
+				<p><a href="http://www.imagistlabs.co">Imagist Labs, Inc. 2014</a> &nbsp;&nbsp;  <a href="http://blog.imagistlabs.co/about/">About</a>&nbsp;&nbsp;<a href="http://www.hellopop.co/privacy.html">Privacy</a>&nbsp;&nbsp;<a href="http://www.hellopop.co/tos.html">Terms of Service</a></p>tr
+	</div>
+	
+		
+	</body>
+</html>

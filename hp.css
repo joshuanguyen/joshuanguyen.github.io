@@ -1,0 +1,180 @@
+/* iPhone */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 640px) {
+
+	body {
+		margin:0;
+	}
+	
+	video#bgvideo {
+		display:none;
+	}
+	
+	.overlay {
+		position:fixed;
+		width: 100%;
+		height: 100%;
+		display: block;
+		background-color: #6dcff6;
+		z-index:0;
+		text-align:center;
+	}
+
+	.overlay img {
+		width: 200px;
+		height: 200px;
+		margin:100px 20px 0px 0px;
+		text-align:center;		
+	}
+
+	.overlay p {
+		width:100%;
+		margin: 15px auto 0px auto;	
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size:20px;
+		color:white;
+	}
+
+	#footer {
+		display:none;
+	}
+
+	#footer p {
+		font-family: "HelveticaNeue-Light" sans-serif;
+		font-size:10px;
+		color:white;
+		text-align:center;
+	}
+	
+	#footer a {
+		color:white;
+	}
+}
+
+/* iPad */
+
+@media only screen and (min-device-width : 641px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+	
+	body {
+		margin:0;
+	}
+	
+	video#bgvideo {
+		display:none;
+	}
+	
+	.overlay {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		display: block;
+		background-color:#6dcff6;
+		/*background-image: url('images/paint.png');
+		background-repeat: repeat;*/
+		z-index:0;
+		text-align:center;
+	}
+
+	.overlay img {
+		width: 300px;
+		height: 300px;
+		margin:190px 0px 20px 0px;
+		text-align:center;		
+	}
+
+	.overlay p {
+		width:100%;
+		margin: 20px 0px 0px 5px;	
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-size:30px;
+		color:white;
+	}
+
+	#footer {
+		display:none;
+	}
+
+	#footer p {
+		font-family: "HelveticaNeue-Light" sans-serif;
+		font-size:10px;
+		color:white;
+		text-align:center;
+	}
+	
+	#footer a {
+		color:white;
+	}
+}
+
+
+
+/*Desktop*/
+@media only screen and (min-device-width: 1025px) {
+		
+	body {
+		margin:0;
+	}
+	
+	video#bgvideo {
+		position: fixed;
+		z-index:-1;
+	}
+	
+	.overlay {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		display: block;
+		background-image: url('images/smalldots.png');
+		background-repeat: repeat;
+		z-index:0;
+	}
+
+	.overlay img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 500px;
+		height:500px;
+		margin-top:-300px;
+		margin-left:-300px;		
+	}
+
+	.overlay p {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 500px;
+		height:500px;
+		margin-top:150px;
+		margin-left:-280px;		
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-weight:bold;
+		font-size:30px;
+		text-align:center;
+		color:white;
+	}
+
+	#footer {
+		position:absolute;
+		left:50%;
+		bottom:0px;
+		width:500px;
+		margin-left:-280px;
+	}
+
+	#footer p {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-size:15px;
+		color:white;
+		text-align:center;
+		font-weight: bold;
+	}
+	
+	#footer a {
+		color:white;
+	}
+}
+
+
+
