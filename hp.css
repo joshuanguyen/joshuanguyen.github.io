@@ -1,9 +1,47 @@
+* {
+  font-family: "avenir", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+a:link {
+    text-decoration:none;
+	background-color: #CACACA;
+	color:#fcfd85;
+	
+}
+
+a:visited {
+    text-decoration:none;
+	background-color: #CACACA;
+	color:#fcfd85;
+}
+
+a:hover {
+    text-decoration:none;
+	background-color: #CACACA;
+	color:#42b6ff;
+}
+
+a:active {
+	text-decoration:none;
+	background-color: #CACACA;
+	color:#fcfd85;
+}
+
+
 /* iPhone */
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 640px) {
 
 	body {
 		margin:0;
+		background-image: url('images/drops.png');
 	}
 	
 	video#bgvideo {
@@ -15,24 +53,29 @@
 		width: 100%;
 		height: 100%;
 		display: block;
-		background-color: #6dcff6;
 		z-index:0;
 		text-align:center;
 	}
 
 	.overlay img {
-		width: 200px;
-		height: 200px;
-		margin:100px 20px 0px 0px;
-		text-align:center;		
+		display:none;
 	}
 
-	.overlay p {
+	.blurb h2 {
 		width:100%;
-		margin: 15px auto 0px auto;	
-		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-size:20px;
+		margin-top:40px;
+		font-size:30px;
 		color:white;
+		font-weight:bold;
+		text-align:center;
+	}
+
+	.blurb p {
+		width:90%;
+		margin: 15px 40px 0px 20px;	
+		font-size:17px;
+		color:white;
+		text-align:left;
 	}
 
 	#footer {
@@ -57,6 +100,7 @@
 	
 	body {
 		margin:0;
+		background-image: url('images/dropsland.png');
 	}
 	
 	video#bgvideo {
@@ -68,42 +112,25 @@
 		width: 100%;
 		height: 100%;
 		display: block;
-		background-color:#6dcff6;
-		/*background-image: url('images/paint.png');
-		background-repeat: repeat;*/
 		z-index:0;
 		text-align:center;
 	}
 
-	.overlay img {
-		width: 300px;
-		height: 300px;
-		margin:190px 0px 20px 0px;
-		text-align:center;		
-	}
-
-	.overlay p {
+	.blurb h2 {
 		width:100%;
-		margin: 20px 0px 0px 5px;	
-		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-		font-size:30px;
 		color:white;
+		font-weight:bold;
+		font-size:50px;
 	}
 
-	#footer {
-		display:none;
+	.blurb p {
+		width:90%;
+		margin: 10px 0px 0px 50px;	
+		font-size:20px;
+		color:white;
+		text-align:left;
 	}
 
-	#footer p {
-		font-family: "HelveticaNeue-Light" sans-serif;
-		font-size:10px;
-		color:white;
-		text-align:center;
-	}
-	
-	#footer a {
-		color:white;
-	}
 }
 
 
@@ -111,6 +138,7 @@
 /*Desktop*/
 @media only screen and (min-device-width: 1024px) {
 		
+
 	body {
 		margin:0;
 	}
@@ -130,50 +158,27 @@
 		z-index:0;
 	}
 
-	.overlay img {
+	.blurb {
 		position: absolute;
-		top: 50%;
-		left: 50%;
-		width: 500px;
-		height:500px;
-		margin-top:-300px;
-		margin-left:-300px;		
+		top: 0%;
+		left: 20%;
+		width: 800px;
 	}
 
-	.overlay p {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		width: 500px;
-		height:500px;
-		margin-top:150px;
-		margin-left:-280px;		
-		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	.blurb h2 {
 		font-weight:bold;
-		font-size:30px;
-		text-align:center;
-		color:white;
-	}
-
-	#footer {
-		position:absolute;
-		left:50%;
-		bottom:0px;
-		width:500px;
-		margin-left:-280px;
-	}
-
-	#footer p {
-		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-		font-size:15px;
-		color:white;
-		text-align:center;
-		font-weight: bold;
+		font-size:60px;
+		color:white;	
 	}
 	
-	#footer a {
+	.blurb p {
+		margin-top:16px;
+		margin-left:0px;		
+		font-size:25px;
+		font-weight:bold;
 		color:white;
 	}
+
 }
 
 
