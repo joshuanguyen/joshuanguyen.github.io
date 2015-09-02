@@ -13,6 +13,7 @@ a:link {
     text-decoration:none;
 	background-color: #ec008c;
 	color:#fcfd85;
+	font-weight:bold;
 	
 }
 
@@ -20,18 +21,21 @@ a:visited {
     text-decoration:none;
 	background-color: #ec008c;
 	color:#fcfd85;
+	font-weight:bold;
 }
 
 a:hover {
     text-decoration:none;
 	background-color: #ec008c;
 	color:#f2c62e;
+	font-weight:bold;
 }
 
 a:active {
 	text-decoration:none;
 	background-color: #ec008c;
 	color:#f2c62e;
+	font-weight:bold;
 }
 
 
@@ -49,7 +53,7 @@ a:active {
 	}
 	
 	.overlay {
-		position:fixed;
+		position:relative;
 		width: 100%;
 		height: 100%;
 		display: block;
@@ -64,7 +68,7 @@ a:active {
 	.blurb h2 {
 		width:100%;
 		margin-top:40px;
-		font-size:30px;
+		font-size:40px;
 		color:white;
 		font-weight:bold;
 		text-align:center;
@@ -72,25 +76,26 @@ a:active {
 
 	.blurb p {
 		width:90%;
-		margin: 15px 40px 0px 20px;	
+		margin: 30px 40px 0px 20px;	
 		font-size:17px;
 		color:white;
 		text-align:left;
 	}
 
-	#footer {
-		display:none;
+	.footer {
+		width:0 auto;
+		margin-bottom:30px;
 	}
 
-	#footer p {
-		font-family: "HelveticaNeue-Light" sans-serif;
-		font-size:10px;
+	.footer p {
+		font-size:17px;
 		color:white;
-		text-align:center;
 	}
 	
-	#footer a {
+	.footer a {
 		color:white;
+		background:transparent;
+		
 	}
 }
 
@@ -100,7 +105,7 @@ a:active {
 	
 	body {
 		margin:0;
-		background-image: url('images/dropsland.png');
+		background-image: url('images/drops.png');
 	}
 	
 	video#bgvideo {
@@ -108,12 +113,11 @@ a:active {
 	}
 	
 	.overlay {
-		position: fixed;
+		position: relative;
 		width: 100%;
 		height: 100%;
 		display: block;
 		z-index:0;
-		text-align:center;
 	}
 
 	.blurb h2 {
@@ -121,14 +125,31 @@ a:active {
 		color:white;
 		font-weight:bold;
 		font-size:50px;
+		margin-left:20px;
 	}
 
 	.blurb p {
-		width:90%;
-		margin: 10px 0px 0px 50px;	
+		width:100%;
+		margin: 10px 0px 40px 20px;	
 		font-size:20px;
 		color:white;
 		text-align:left;
+	}
+	
+	.footer {
+		width:0 auto;
+		margin-bottom:30px;
+	}
+
+	.footer p {
+		font-size:20px;
+		color:white;
+	}
+	
+	.footer a {
+		color:white;
+		background:transparent;
+		
 	}
 
 }
@@ -143,9 +164,19 @@ a:active {
 		margin:0;
 	}
 	
-video#bgvideo {
+	video#bgvideo {
 		position: fixed;
-		z-index:-1;
+		top: 50%;
+		left: 50%;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		z-index:-100;
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		    transform: translateX(-50%) translateY(-50%);
+		    background: url(images/videoposter.jpg) no-repeat;
+		    background-size: cover; 
 	}
 		
 	.overlay {
@@ -157,7 +188,7 @@ video#bgvideo {
 	}
 
 	.blurb {
-		position: absolute;
+		position: relative;
 		top: 0%;
 		left: 20%;
 		width: 800px;
@@ -173,9 +204,33 @@ video#bgvideo {
 		margin-top:16px;
 		margin-left:0px;		
 		font-size:25px;
-		font-weight:bold;
 		color:white;
 	}
+
+	
+	.footer a:link {
+	    text-decoration:none;
+		background-color:transparent;
+		color:#fcfd85;
+		font-weight:normal;
+	}
+	
+	.footer a:hover {
+	    text-decoration:none;
+		background-color:transparent;
+		color:#f2c62e;
+		font-weight:normal;
+	}
+	
+	.footer p {
+		padding-top:40px;
+		margin-top:16px;
+		margin-left:0px;		
+		font-size:25px;
+		color:white;
+		
+	}
+
 
 }
 
